@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket Chat Application</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+    <script src="/jquery-1.10.2.min.js"></script>
+    <script src="/app2.js"></script>
+    <style>
+    .price{
+    border:none;
+    }
+    </style>
+</head>
+<body>
+<script >
+
+//setInterval(function(){ sendData('google'); }, 3000);
+//setInterval(function(){ sendData('hotmail'); }, 3000);
+//setInterval(function(){ sendData('yahoo'); }, 3000);
+//setInterval(function(){ sendData('netflix'); }, 3000);
+//setInterval(function(){ sendData('orcale'); }, 3000);
+</script>
+<div id="main-content" class="container">
+    <div class="row">
+       
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="chat">
+                <thead>
+                <tr>
+                    <th><h1>Stock Market</h1></th>
+                </tr>
+                </thead>
+                <tbody id="helloworldmessage">
+                </tbody>
+                
+            </table>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Company</th>
+      <th scope="col">Price share</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Google</td>
+      <td><input type ="text" id ="price" value="" class="price"></td>
+      <td><input type="button" id="subcribe" onclick="Subcribe('google');" value="Google Subcription"/> </td>
+    
+    </tr>
+    <tr>
+      <tr>
+      <th scope="row">2</th>
+      <td>hotmail</td>
+      <td><input type ="text" id ="price1" value="" class="price"></td>
+      <td><input type="button" id="subcribe" onclick="Subcribe('hotmail');" value="hotmail Subcription"/> </td>
+     
+    </tr>
+    <tr>
+     <tr>
+      <tr>
+      <th scope="row">3</th>
+      <td>yahoo</td>
+      <td><input type ="text" id ="price2" value="" class="price"></td>
+       <td><input type="button" id="subcribe" onclick="Subcribe('yahoo');" value=" yahoo subscription"/> </td>
+      
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+      <td>netflix</td>
+      <td><input type ="text" id ="price3" value="" class="price"></td>
+      <td><input type="button" id="subcribe" onclick="Subcribe('netflix');" value=" Netflix Subcription"/></td>
+    
+    </tr>
+  
+  </tbody>
+</table>
+        </div>
+     
+          
+    </div>
+    
+
+</div>
+</body>
+<script>
+function Subcribe(str){
+	
+	 sendData(str);
+	 
+}
+</script>
+</html>
